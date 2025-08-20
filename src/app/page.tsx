@@ -9,15 +9,25 @@ import OurCabs from "@/components/OurCabs/OurCabs";
 export default function HomePage() {
   return (
     <>
-      <ContactHeader />
-      <Header />
-      <main>
+      {/* <ContactHeader /> */}
+      
+      <main 
+          >
         <Hero />
+        <div className="body-container"
+       style={{
+            display: "flex",
+            flexDirection: "column",
+            // width: "1152px",
+            width: "100%",
+            margin: "auto",
+          }}>
         <HowItWorks />
         <OurCabs />
+        </div>
         {/* <Services /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

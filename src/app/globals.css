@@ -11,7 +11,11 @@
   --font-sans: "Geist Sans", sans-serif;
   --font-mono: "Geist Mono", monospace;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,4 +26,28 @@
 
 body {
   @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased;
+}
+
+.body-container{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 0px 40px; */
+  /* margin:auto; */
+  /* width:1152px; */
+  /* background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px; */
+ font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* margin-left: 320px;
+  margin-right: 320px; */
+}
+*{
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

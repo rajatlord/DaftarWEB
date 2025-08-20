@@ -15,17 +15,17 @@ const HowItWorksSection: React.FC = () => {
       <div className="how-it-works-content-wrapper">
         {/* Left Side: Text Content */}
         <div className="how-it-works-text-content">
-          <h2>Let&apos;s get started in 3 simple Steps</h2>
+          <h2 className="second-heading">Let&apos;s get started in 3 simple Steps</h2>
           <p className="description">
             Get your subscription today and start commuting to work with our
             cutting-edge, cloud-based smart sharing mobility solution. Welcome
             to the future of commuting!
           </p>
-          <h3>How It Works:</h3>
+          <h3 style={{textAlign:"left", fontWeight:"normal",fontSize:"1.1em", marginLeft:"20px",marginBottom:"1px"}}>How It Works:</h3>
           <ol>
-            <li>Click MAP YOUR DAFTAR ROUTE Button.</li>
-            <li>Fill & Submit the form.</li>
-            <li>Wait for the dispatcher call & you are done.</li>
+            <li style={{textAlign:"left", fontWeight:"normal",fontSize:"1.1em"}}>Click MAP YOUR DAFTAR ROUTE Button.</li>
+            <li style={{textAlign:"left", fontWeight:"normal",fontSize:"1.1em"}}>Fill & Submit the form.</li>
+            <li style={{textAlign:"left", fontWeight:"normal",fontSize:"1.1em"}}>Wait for the dispatcher call & you are done.</li>
           </ol>
           <a href="#" className="map-button">
             MAP YOUR DAFTAR ROUTE

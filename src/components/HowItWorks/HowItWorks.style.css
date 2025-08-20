@@ -26,7 +26,7 @@
   text-align: left; /* Align text to the left */
 }
 
-.how-it-works-text-content h2 {
+.how-it-works-text-content  {
   font-size: 2.8em;
   color: #333;
   margin-bottom: 20px;
@@ -34,7 +34,7 @@
   text-align: center; /* Center the main heading */
 }
 
-.how-it-works-text-content .description {
+.how-it-works-text-content {
   font-size: 1.1em;
   line-height: 1.6;
   color: #555;
@@ -90,6 +90,7 @@
   margin: 40px auto 0 auto; /* Center button horizontally */
   text-decoration: none; /* For anchor tag if used */
   text-align: center;
+      width: 275px;
 }
 
 .map-button:hover {
@@ -99,7 +100,8 @@
 /* Right Side: Phone Mockup */
 .phone-mockup-container {
   flex-shrink: 0; /* Prevent shrinking */
-  width: 300px; /* Fixed width for the phone mockup */
+  /* width: 300px; Fixed width for the phone mockup */
+  width: 240px; /* Fixed width for the phone mockup */
   height: auto;
   position: relative;
   border-radius: 20px; /* Rounded corners for the phone itself */
@@ -132,6 +134,27 @@
   z-index: 0; /* Behind other content */
   transform: translateY(50%); /* Push half of it out of view */
 }
+
+.second-heading{
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: #333;
+  /* margin-bottom: 20px; */
+  margin-bottom: -12px;
+  text-align: center; /* Center the second heading */
+  line-height: 56px;
+  letter-spacing: -1.2px;
+  text-align: center;
+}
+
+.description{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 600px;
+  font-weight: 600;
+      margin-bottom: 40px;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
@@ -174,11 +197,11 @@
     padding: 60px 20px;
   }
 
-  .how-it-works-text-content h2 {
+  .how-it-works-text-content  {
     font-size: 2.2em;
   }
 
-  .how-it-works-text-content .description,
+  .how-it-works-text-content ,
   .how-it-works-text-content ol li {
     font-size: 1em;
   }

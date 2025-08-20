@@ -1,6 +1,13 @@
 import React from "react";
 import AnimatedCar from "../../../assets/Sedan.png";
 import AnimatedBus from "../../../assets/Sedan.png";
+import phone from "../../../public/assets/footer/phone.png"
+import email from "../../../public/assets/footer/email.png"
+import clock from "../../../public/assets/footer/clock.png"
+import vocal from "../../../public/assets/footer/vocal.png"
+
+import playstore from "../../../public/assets/footer/playstore.png"
+import payments from "../../../public/assets/footer/payments.png"
 import "./Footer.style.css";
 import Image from "next/image";
 
@@ -10,17 +17,32 @@ const Footer: React.FC = () => {
       {/* Top Bar Section */}
       <div className="footer-top-bar">
         <div className="footer-top-item">
-          <span className="icon">📞</span>
+          <span className="icon"><Image
+          src={phone}
+          alt="phone"
+          style={{width:"30px",height:"30px", filter: "invert(1)"}}
+          // className="animated-vehicle bus"
+        /></span>
           <span className="label">CALL US</span>
           <span className="value">Call: 7701-900-819</span>
         </div>
         <div className="footer-top-item">
-          <span className="icon">✉️</span>
+          <span className="icon"><Image
+          src={email}
+          alt="email"
+          style={{width:"30px",height:"30px", filter: "invert(1)"}}
+          // className="animated-vehicle bus"
+        /></span>
           <span className="label">EMAIL US</span>
           <span className="value">hello@daftarroute.com</span>
         </div>
         <div className="footer-top-item">
-          <span className="icon">⏰</span>
+          <span className="icon"><Image
+          src={clock}
+          alt="clock"
+          style={{width:"30px",height:"30px", filter: "invert(1)"}}
+          // className="animated-vehicle bus"
+        /></span>
           <span className="label">OPENING HOURS</span>
           <span className="value">Mon - Sat: 9am - 9pm</span>
         </div>
@@ -35,10 +57,18 @@ const Footer: React.FC = () => {
             is not just convenient, but optimized for your comfort and precisely
             schedule, ensuring a seamless commute tailored to your office hours.
           </p>
-          <div className="vocal-for-local">
+          {/* <div className="vocal-for-local">
             <div className="icon-graphic">🇮🇳</div>{" "}
-            {/* Placeholder for the graphic */}
+            Placeholder for the graphic
             <span className="text">Vocal for local</span>
+          </div> */}
+          <div>
+            <Image
+          src={vocal}
+          alt="vocal for local"
+          style={{width:"200px",height:"30px"}}
+          // className="animated-vehicle bus"
+        />
           </div>
         </div>
 
@@ -103,20 +133,22 @@ const Footer: React.FC = () => {
             {/* Replace with actual image paths */}
           </div>
           <div className="app-badge">
-            <img
-              src="/path/to/google-play-badge.png"
-              alt="Get it on Google Play"
-            />{" "}
+           <Image
+          src={playstore}
+          alt="playstore"
+          style={{width:"100%",height:"100%", }}
+          // className="animated-vehicle bus"
+        />{" "}
             {/* Replace with actual image paths */}
           </div>
         </div>
 
         <div className="payment-powered-by">
           <p>PAYMENT POWERED BY</p>
-          <div className="payment-methods">
+          {/* <div className="payment-methods">
             <div className="payment-method-logo">
               <img src="/path/to/visa-logo.png" alt="Visa" />{" "}
-              {/* Replace with actual image paths */}
+              Replace with actual image paths
             </div>
             <div className="payment-method-logo">
               <img src="/path/to/mastercard-logo.png" alt="Mastercard" />
@@ -127,7 +159,13 @@ const Footer: React.FC = () => {
             <div className="payment-method-logo">
               <img src="/path/to/paytm-logo.png" alt="Paytm" />
             </div>
-          </div>
+          </div> */}
+        <Image
+          src={payments}
+          alt="payments"
+          style={{width:"200px",height:"100%"}}
+          // className="animated-vehicle bus"
+        />
         </div>
       </div>
 

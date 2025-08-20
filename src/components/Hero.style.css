@@ -1,28 +1,64 @@
+/* selection for website */
+::selection {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* Fonts */
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 52px;
+  font-style: normal;
+}
+
 /* src/styles/HeroSection.css */
 
 .hero-container {
+   /* margin: 72px auto 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 60px 40px;
+  /* padding: 0px 40px; */
+  /* margin:auto; */
+  /* width:1000px; */
   background-color: #f8f8f8;
   position: relative;
+  width: 80vw;
+  height: 100vh;
   overflow: hidden;
-  min-height: 600px;
+  /* min-height: 600px; */
+  /* padding: 20px; */
+  /* z-index: 5; */
 }
 
 .content-wrapper {
   display: flex;
-  gap: 80px;
-  max-width: 1200px;
+  /* gap: 5px; */
+  /* max-width: 1200px; */
   width: 100%;
-  align-items: center;
+  /* justify-content: space-between; */
+  
+  /* align-items: center; */
+}
+/* 📱 On small screens, go column mode */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center; /* Optional: center content on mobile */
+  }
 }
 
 .text-content {
-  flex: 1;
+  /* flex: 1; */
+  color: white;
   text-align: left;
   padding-bottom: 50px;
+  margin-left: 80px;
+  margin-bottom: 236px;
+  margin-right: 216px;
 }
 
 .headline {
@@ -31,13 +67,17 @@
   margin-bottom: 20px;
   line-height: 1.1;
   font-weight: bold;
+  letter-spacing: -1px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .sub-headline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
   font-size: 1.3em;
-  color: #555;
+  color: white;
   line-height: 1.5;
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .form-wrapper {
@@ -46,8 +86,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+      padding: 25px 40px 25px;
   z-index: 2;
+  margin-bottom: 40px;
 }
 
 .curved-background {
@@ -62,7 +103,7 @@
 }
 
 .form-container {
-  background-color: #222;
+  /* background-color: #222; */
   border-radius: 15px;
   padding: 40px;
   display: flex;
@@ -72,6 +113,7 @@
   max-width: 450px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   z-index: 3;
+      width: 320px;
 }
 
 .form-group {
@@ -81,7 +123,12 @@
 
 .form-label {
   color: white;
-  font-size: 0.9em;
+  /* font-size: 0.9em; */
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 16px;
+  font-style: normal;
   margin-bottom: 5px;
 }
 
@@ -157,4 +204,54 @@
 .chat-widget::before {
   content: "💬"; /* Replace with an actual icon if desired */
   font-size: 1.2em;
+}
+
+/* buttons for herosection */
+.button-wrapper{
+  display: flex;
+  gap: 10px;
+  /* margin-top: 100px; */
+}
+.primary-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #307033;
+}
+
+.outline-button {
+  background-color: transparent;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.outline-button:hover {
+  background-color: #307033;
+  /* border: 2px solid #307033; */
+  color: white;
+}
+
+.glass-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background: rgba(255, 255, 255, 0.15);
+  /* border-radius: 16px; */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* padding: 20px; */
+  /* color: #fff;
+   */
 }
