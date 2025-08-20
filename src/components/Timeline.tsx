@@ -1,38 +1,38 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import styles from "./Timeline.module.css";
 
-const timelineData = [
-  {
-    year: "2017",
-    title: "Chapter One",
-    description:
-      "DaftarRoute was founded. We piloted the initial solution for smarter employee commutes.",
-  },
-  {
-    year: "2019",
-    title: "Chapter Two",
-    description:
-      "Launched our Real-Time Tracking system, bringing more transparency to daily routes.",
-  },
-  {
-    year: "2021",
-    title: "Chapter Three",
-    description:
-      "Released our robust eTMS (Transport Management System) module.",
-  },
-  {
-    year: "2023",
-    title: "Chapter Four",
-    description:
-      "Launched our app for seamless commuting, from booking to arrival.",
-  },
-  {
-    year: "2025",
-    title: "Chapter Five",
-    description:
-      "(Planned) Scaling the DaftarRoute experience to global enterprises.",
-  },
-];
+// const timelineData = [
+//   {
+//     year: "2017",
+//     title: "Chapter One",
+//     description:
+//       "DaftarRoute was founded. We piloted the initial solution for smarter employee commutes.",
+//   },
+//   {
+//     year: "2019",
+//     title: "Chapter Two",
+//     description:
+//       "Launched our Real-Time Tracking system, bringing more transparency to daily routes.",
+//   },
+//   {
+//     year: "2021",
+//     title: "Chapter Three",
+//     description:
+//       "Released our robust eTMS (Transport Management System) module.",
+//   },
+//   {
+//     year: "2023",
+//     title: "Chapter Four",
+//     description:
+//       "Launched our app for seamless commuting, from booking to arrival.",
+//   },
+//   {
+//     year: "2025",
+//     title: "Chapter Five",
+//     description:
+//       "(Planned) Scaling the DaftarRoute experience to global enterprises.",
+//   },
+// ];
 
 export default function Timeline() {
   return (

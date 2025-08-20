@@ -3,8 +3,8 @@
 import React from "react";
 import "./Hero.style.css"; // Import the CSS file
 // image imorts
-import Image from "next/image";
-import Order_ride_bro from "../../assets/HeroSectionImg/Order_ride_bro.png";
+// import Image from "next/image";
+// import Order_ride_bro from "../../assets/HeroSectionImg/Order_ride_bro.png";
 // import video from "../../assets/HeroSectionImg/video.mp4"; // Assuming you have a video file
 
 const Hero: React.FC = () => {

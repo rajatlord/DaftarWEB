@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
 
         <div className="app-downloads">
           <div className="app-badge">
-            <img src="/path/to/itunes-badge.png" alt="Get it on iTunes" />{" "}
+            <Image src="/path/to/itunes-badge.png" alt="Get it on iTunes" />{" "}
             {/* Replace with actual image paths */}
           </div>
           <div className="app-badge">

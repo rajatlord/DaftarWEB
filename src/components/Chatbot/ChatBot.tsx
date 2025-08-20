@@ -207,6 +207,8 @@ const ChatBot: React.FC = () => {
   // Registration step-by-step handling
   const handleRegisterFlow = (message: string) => {
     if (registerStep === 0) {
+      console.log(registerData);
+
       setRegisterData(prev => ({ ...prev, address: message }));
       setRegisterStep(1);
       setChatHistory(prev => [...prev, { role: "model", text: "Please provide your Office Address:" }]);

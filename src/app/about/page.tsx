@@ -1,22 +1,22 @@
 "use client";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
+// import Header from "@/components/Header/Header";
+// import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 // import main_4 from "../../../public/assets/about_us/main_4.jpg";
 // import main_5 from "../../../public/assets/about_us/main-5.jpg";
 import main_3 from "../../../public/assets/about_us/main-5.jpg";
 // import main_6 from "../../../public/assets/about_us/main_6.jpg";
-import main_7 from "../../../public/assets/about_us/main_7.jpg";
+// import main_7 from "../../../public/assets/about_us/main_7.jpg";
 import phone from "../../../public/assets/footer/phone.png";
 // gif import
 import gif from "../../../public/assets/about_us/traffic-jam-rush-hour.gif";
 
 // Icons / Images for zigzag sections
-import The_company from "../../../public/assets/about_us/The_company.jpeg";
-import who_we_are from "../../../public/assets/about_us/who_we_are.jpeg";
-import why_us from "../../../public/assets/about_us/why_us.jpg";
-import founder_1 from "../../../public//assets/about_us/founder1.jpeg";
+// import The_company from "../../../public/assets/about_us/The_company.jpeg";
+// import who_we_are from "../../../public/assets/about_us/who_we_are.jpeg";
+// import why_us from "../../../public/assets/about_us/why_us.jpg";
+// import founder_1 from "../../../public//assets/about_us/founder1.jpeg";
 import team from "../../../public//assets/about_us/team.jpg";
 import values from "../../../public//assets/about_us/values.jpg";
 // CSS module
@@ -202,15 +202,15 @@ export default function About() {
             <p>
               DaftarRoute is built for companies that value how employees get to
               work. We know that behind every late arrival is a professional
-              juggling deadlines, stress, and personal sacrifices. That’s why we
+              juggling deadlines, stress, and personal sacrifices. That&apos;s why we
               deliver reliable employee transport that gives teams back control
               over their time. Born from our expertise in scalable cloud
               infrastructure and real-time systems, we now power smarter
               commutes from dynamic fleet tracking to our enterprise-ready
-              Transport Management System (eTMS). Since 2017, we’ve helped
+              Transport Management System (eTMS). Since 2017, we&apos;ve helped
               thousands of professionals across India reach the office on time,
               cut costs, boost reliability, and promote sustainable mobility.
-              DaftarRoute isn’t just a vendor, we’re your mobility partner,
+              DaftarRoute isn&apos;t just a vendor, we&apos;re your mobility partner,
               engineering commutes that work in real-world traffic at real-world
               scale
             </p>
@@ -229,21 +229,21 @@ export default function About() {
             <div className={styles.coreValuesGrid}>
               <div className={styles.coreValueCard}>
                 {/* <div className={styles.coreValueTitle}>“Data First”</div> */}
-                <div className={styles.coreValueTitle}>"Data Centeic”</div>
+                <div className={styles.coreValueTitle}>&quot;Data Centeic&quot;</div>
                 <div className={styles.coreValueDesc}>
                   We let real-time metrics drive decisions.
                 </div>
               </div>
               <div className={styles.coreValueCard}>
                 {/* <div className={styles.coreValueTitle}>“Customer Obsessed”</div> */}
-                <div className={styles.coreValueTitle}>"Customer First”</div>
+                <div className={styles.coreValueTitle}>&quot;Customer First&quot;</div>
                 <div className={styles.coreValueDesc}>
                   Every feature begins with a pain-point.
                 </div>
               </div>
               <div className={styles.coreValueCard}>
                 <div className={styles.coreValueTitle}>
-                  “One Planet Positive/ Carbon Smart”
+                  &quot;One Planet Positive/ Carbon Smart&quot;
                 </div>
                 <div className={styles.coreValueDesc}>
                   Reducing idle time, cutting carbon.
@@ -251,10 +251,10 @@ export default function About() {
               </div>
               <div className={styles.coreValueCard}>
                 <div className={styles.coreValueTitle}>
-                  “Engineering Excellence”
+                  &quot;Engineering Excellence&quot;
                 </div>
                 <div className={styles.coreValueDesc}>
-                  Code that thrives in chaos.
+                  Code that thrives in chaos.
                 </div>
               </div>
             </div>
@@ -412,13 +412,13 @@ export default function About() {
               </div>
             </div>
             <div style={{width:"35rem"}}>
-              <h4 className={styles.thoughtTitle}>Founder's Thoughts</h4>
+              <h4 className={styles.thoughtTitle}>Founder&apos;s Thoughts</h4>
               <p className={styles.thoughtText}>
-                "We knew there’d be a time when commuting drained people more
+                &quot;We knew there&apos;d be a time when commuting drained people more
                 than their work and sustainability would be at risk. DaftarRoute
                 was built to change that, turning daily travel into something
                 meaningful, efficient, and powered by tech that puts people
-                first."
+                first.&quot;
               </p>
             </div>
           </div>
@@ -471,7 +471,7 @@ export default function About() {
           </div>
         </div>
       </motion.section>
-      {/* <Footer /> */}
+      
     </div>
   );
 }
