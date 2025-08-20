@@ -1,0 +1,160 @@
+/* src/styles/HeroSection.css */
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.text-content {
+  flex: 1;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+.headline {
+  font-size: 3.5em;
+  color: #4caf50;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.sub-headline {
+  font-size: 1.3em;
+  color: #555;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.form-wrapper {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.curved-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #222;
+  border-bottom-left-radius: 200px;
+  z-index: 1;
+}
+
+.form-container {
+  background-color: #222;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  color: white;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-select {
+  padding: 12px 15px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  font-size: 1em;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+}
+
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M208.5%2089.5L128%20170.5L47.5%2089.5H208.5Z%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+}
+
+.form-select option {
+  background-color: #333;
+  color: white;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #388e3c;
+}
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 0.9em;
+  z-index: 100;
+}
+
+.chat-widget::before {
+  content: "💬"; /* Replace with an actual icon if desired */
+  font-size: 1.2em;
+}

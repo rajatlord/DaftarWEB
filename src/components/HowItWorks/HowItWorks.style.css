@@ -1,0 +1,201 @@
+/* src/styles/HowItWorksSection.css */
+
+.how-it-works-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px; /* Adjust padding as needed */
+  background-color: #f8f8f8; /* Light background */
+  position: relative;
+  overflow: hidden; /* For the wave background */
+}
+
+.how-it-works-content-wrapper {
+  display: flex;
+  gap: 80px; /* Space between text content and phone mockup */
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between; /* Push content to edges if space allows */
+}
+
+/* Left Side: Text Content */
+.how-it-works-text-content {
+  flex: 1; /* Takes up available space */
+  max-width: 600px; /* Limit width for readability */
+  text-align: left; /* Align text to the left */
+}
+
+.how-it-works-text-content h2 {
+  font-size: 2.8em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: center; /* Center the main heading */
+}
+
+.how-it-works-text-content .description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.how-it-works-text-content h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center; /* Center "How It Works" */
+}
+
+.how-it-works-text-content ol {
+  list-style: none; /* Remove default numbering */
+  counter-reset: my-counter; /* Initialize counter */
+  padding: 0;
+  margin: 0;
+}
+
+.how-it-works-text-content ol li {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 35px; /* Space for custom number */
+}
+
+.how-it-works-text-content ol li::before {
+  content: counter(my-counter) "."; /* Use counter for numbering */
+  counter-increment: my-counter;
+  font-weight: bold;
+  color: #4caf50; /* Green number */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  text-align: right; /* Align number to the right within its space */
+}
+
+.map-button {
+  background-color: #4caf50; /* Green button */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px; /* Rounded pill shape */
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Make it a block element */
+  margin: 40px auto 0 auto; /* Center button horizontally */
+  text-decoration: none; /* For anchor tag if used */
+  text-align: center;
+}
+
+.map-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Right Side: Phone Mockup */
+.phone-mockup-container {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 300px; /* Fixed width for the phone mockup */
+  height: auto;
+  position: relative;
+  border-radius: 20px; /* Rounded corners for the phone itself */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background-color: #1a1a1a; /* Dark color for phone frame */
+  padding: 10px; /* Inner padding to simulate bezel */
+}
+
+.phone-screen {
+  background-color: white; /* Screen background */
+  border-radius: 10px; /* Screen rounded corners */
+  overflow: hidden; /* Hide anything outside screen */
+}
+
+.phone-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Green Wave/Curve Background */
+.green-wave-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%; /* Cover left bottom part */
+  height: 200px; /* Height of the wave section */
+  background-color: #4caf50; /* Green color */
+  border-top-right-radius: 50% 100px; /* Creates the wave shape */
+  z-index: 0; /* Behind other content */
+  transform: translateY(50%); /* Push half of it out of view */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .how-it-works-content-wrapper {
+    flex-direction: column; /* Stack vertically */
+    gap: 50px;
+  }
+
+  .how-it-works-text-content {
+    max-width: 100%; /* Full width */
+    text-align: center; /* Center all text content */
+  }
+
+  .how-it-works-text-content ol {
+    display: inline-block; /* Make ol behave like block but center content */
+    text-align: left; /* Keep list items left-aligned within their container */
+  }
+
+  .how-it-works-text-content ol li {
+    padding-left: 25px; /* Adjust padding for smaller screens */
+  }
+  .how-it-works-text-content ol li::before {
+    width: 20px; /* Adjust number width */
+  }
+
+  .phone-mockup-container {
+    width: 280px; /* Slightly smaller phone */
+    margin: 0 auto; /* Center phone horizontally */
+  }
+
+  .green-wave-bg {
+    width: 80%; /* Expand wave for smaller screens */
+    height: 150px;
+    border-top-right-radius: 70% 80px; /* Adjust wave shape */
+  }
+}
+
+@media (max-width: 576px) {
+  .how-it-works-section {
+    padding: 60px 20px;
+  }
+
+  .how-it-works-text-content h2 {
+    font-size: 2.2em;
+  }
+
+  .how-it-works-text-content .description,
+  .how-it-works-text-content ol li {
+    font-size: 1em;
+  }
+
+  .map-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .phone-mockup-container {
+    width: 250px;
+    padding: 8px;
+  }
+
+  .green-wave-bg {
+    width: 100%;
+    height: 100px;
+    border-top-right-radius: 90% 60px;
+  }
+}

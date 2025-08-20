@@ -1,0 +1,100 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  height: 60px;
+}
+
+.top-bar {
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  background-color: #222;
+  color: white;
+  border-bottom-left-radius: 5px;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.phone-number::before {
+  content: "☏"; /* Replace with an actual icon if desired */
+  font-size: 1.2em;
+  color: white;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.logo-image {
+  width: 50px;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text span:first-child {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.logo-text span:last-child {
+  font-size: 0.8em;
+  color: #777;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #4caf50;
+  font-weight: 500;
+  font-size: 0.95em;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #388e3c;
+}
