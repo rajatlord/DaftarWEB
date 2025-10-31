@@ -13,6 +13,8 @@
   flex-direction: column;
   margin-Left: 150px;
   margin-right: 150px;
+  position: relative;
+  z-index: 5;
 }
 
 /* ====================
@@ -28,6 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 
 .hero-overlay {
@@ -38,6 +41,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); /* darken background */
+  z-index: 0;
+  pointer-events: none; /* let hover pass through */
 }
 
 .hero-content {
@@ -55,7 +67,7 @@
 }
 
 .hero h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   width: 100%;
   font-weight: 700;
   margin-bottom: 15px;
@@ -64,7 +76,7 @@
 }
 
 .hero p {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 25px;
   line-height: 1.7;
   color: #eaeaea;
@@ -79,7 +91,7 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  font-size:2rem;
+  font-size:1.2rem;
 }
 
 .primary-btn:hover {
@@ -95,7 +107,7 @@
 }
 
 .section h2 {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   color: #2b9119;
   margin-bottom: 40px;
   font-weight: 700;
@@ -139,11 +151,11 @@
   margin-bottom: 10px;
 }
 .card h3{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .card p{
-  font-size: 1.3rem;
+  font-size: 0.9rem;
 }
 
 
@@ -181,17 +193,24 @@
   justify-content: center;
   gap: 1rem;
 }
+.benefits-container p{
+  font-size: 1rem;
+}
 .benefits-img{
-  width:600px;
-  height: 350px;
+  width:450px;
+  height: 250px;
 }
 /* ====================
    INDUSTRY SOLUTIONS
 ==================== */
 .industry-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+}
+
+.industry-grid div:nth-child(7) {
+  grid-column: span 3;
 }
 
 .industry-card {
@@ -216,12 +235,8 @@
 .industry-card p{
   font-size: 1.1rem;
 }
-
-.industry-grid div:nth-child(7) {
-  grid-column: span 2;
-}
 .analytics-text{
-  font-size: 1.8rem;
+  font-size: 1.1rem;
 }
 /* ====================
    CTA
@@ -240,34 +255,21 @@
 }
 
 .cta-banner p {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
 /* ====================
    For responsive design
 ==================== */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
  .hero {
   position: relative;
   background: url("/assets/solution/banner.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 120px 20px;
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  /* dark overlay for text visibility */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
 }
 
 .hero-content {
@@ -285,7 +287,7 @@
 }
 
 .hero h1 {
-  font-size: 2.6rem;
+  font-size: 1.5rem;
   width: 100%;
   font-weight: 900;
   margin-bottom: 15px;
@@ -427,7 +429,7 @@
   flex-direction: column;
 }
 
-}
+} */  
 
 @media (max-width: 480px){
  .hero {
@@ -436,7 +438,7 @@
   color: #fff;
   text-align: center;
   padding: 120px 20px;
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -446,7 +448,6 @@
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
-  /* dark overlay for text visibility */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,7 +456,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 480px;
+  max-width: 100%;
   opacity: 0;
   transform: translateY(40px);
   transition: all 0.9s ease-out;
@@ -467,7 +468,7 @@
 }
 
 .hero h1 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   width: 100%;
   font-weight: 900;
   margin-bottom: 15px;
@@ -476,7 +477,7 @@
 }
 
 .hero p {
-  font-size:0.9rem;
+  font-size:1rem;
   margin-bottom: 25px;
   line-height: 1.7;
   color: #eaeaea;
@@ -598,3 +599,178 @@
 }
 
 }
+
+@media (max-width: 768px) {
+
+ .hero {
+  position: relative;
+  background: url("/assets/solution/banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:  column;
+}
+
+.hero-content.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  width: 100%;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: #2b9119;
+}
+
+.hero p {
+  max-width: 80%;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #2b9119;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 10px 5px;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #2b9119;
+  margin-bottom: 10px;
+}
+
+.card h3{
+  font-size: 1.2rem;
+}
+.card p{
+  font-size: 0.9rem;
+}
+
+
+.solution-card-grid{
+   display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.industry-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.industry-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.industry-card h3 {
+  color: #2b9119;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.benefits-img{
+  width: 40vw ;
+  height:40vw;
+}
+
+.benefits-container{
+  flex-direction:  column;
+}
+
+.benefits-img{
+  width: 30rem;
+  height: 16rem;
+}
+.analytics-text{
+  font-size: 1.3rem;
+}
+
+.cta-banner{
+ margin-left: 5vw;
+ margin-right: 5vw;
+ padding: 10px 5px;
+}
+.cta-banner h2{
+   font-size: 1.3rem; 
+}
+.cta-banner p{
+   font-size: 1rem; 
+}
+.cta-banner button{
+    font-size: 1rem;
+}
+} 
