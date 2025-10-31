@@ -1,0 +1,600 @@
+/* ====================
+   GENERAL STYLES
+==================== */
+.solutions-main {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.solution-body-container {
+  display: flex;
+  flex-direction: column;
+  margin-Left: 150px;
+  margin-right: 150px;
+}
+
+/* ====================
+   HERO SECTION
+==================== */
+.hero {
+  position: relative;
+  background: url("/assets/solution/banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  /* dark overlay for text visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90vw;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.hero-content.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: #2b9119;
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  color: #eaeaea;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #2b9119;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size:2rem;
+}
+
+.primary-btn:hover {
+  background: #88af81;
+}
+
+/* ====================
+   SECTION
+==================== */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 3.5rem;
+  color: #2b9119;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* ====================
+   CARD GRID
+==================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 30px 20px;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #2b9119;
+  margin-bottom: 10px;
+}
+.card h3{
+  font-size: 1.6rem;
+}
+
+.card p{
+  font-size: 1.3rem;
+}
+
+
+/* ====================
+   solution-card-grid
+==================== */
+.solution-card-grid{
+   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  justify-items: stretch;
+}
+.solution-card-grid div:nth-child(1){
+  grid-column: span 3;
+}
+
+.solution-card-grid div:nth-child(5){
+  grid-column: span 2;
+}
+/* ====================
+   BENEFITS
+==================== */
+.benefits-list {
+  margin-top: 0;
+  width: 100%;
+  text-align: left;
+  font-size: 1.6rem;
+  top: 0;
+}
+/* style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}} */
+.benefits-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.benefits-img{
+  width:600px;
+  height: 350px;
+}
+/* ====================
+   INDUSTRY SOLUTIONS
+==================== */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.industry-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 25px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.industry-card h3 {
+  color: #2b9119;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.industry-card p{
+  font-size: 1.1rem;
+}
+
+.industry-grid div:nth-child(7) {
+  grid-column: span 2;
+}
+.analytics-text{
+  font-size: 1.8rem;
+}
+/* ====================
+   CTA
+==================== */
+.cta-banner {
+  background: #2b9119;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 12px;
+}
+
+.cta-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* ====================
+   For responsive design
+==================== */
+@media (max-width: 768px){
+ .hero {
+  position: relative;
+  background: url("/assets/solution/banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  /* dark overlay for text visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 100vw;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.hero-content.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  width: 100%;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: #2b9119;
+}
+
+.hero p {
+  font-size:1.5rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  color: #eaeaea;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #2b9119;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.5rem;
+}
+
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+.solution-body-container {
+  margin-Left: 0px;
+  margin-right: 0px;
+}
+
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 10px 5px;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #2b9119;
+  margin-bottom: 10px;
+}
+.card h3{
+  font-size: 1.8rem;
+}
+.card p{
+  font-size: 1.6rem;
+}
+
+.solution-card-grid{
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: stretch;
+}
+.solution-card-grid div:nth-child(1){
+  grid-column: span 2;
+}
+
+.solution-card-grid div:nth-child(5){
+  grid-column: span 1;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+}
+
+.industry-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.industry-card h3 {
+  color: #2b9119;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.industry-card p {
+  font-size: 1.5rem;
+}
+.industry-grid div:nth-child(1) {
+  grid-column: span 2;
+}
+.industry-grid div:nth-child(7) {
+  grid-column: span 1;
+}
+.analytics-text{
+  font-size: 1.5rem;
+}
+
+.cta-banner h2{
+   font-size: 2.5rem;
+}
+.cta-banner p{
+   font-size: 1.5rem;
+}
+
+.benefits-img{
+  width: 100vw;
+}
+
+.benefits-container{
+  flex-direction: column;
+}
+
+}
+
+@media (max-width: 480px){
+ .hero {
+  position: relative;
+  background: url("/assets/solution/banner.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  /* dark overlay for text visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+}
+
+.hero-content.fade-in-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero h1 {
+  font-size: 1.6rem;
+  width: 100%;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: #2b9119;
+}
+
+.hero p {
+  font-size:0.9rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  color: #eaeaea;
+}
+
+.primary-btn {
+  background: #fff;
+  color: #2b9119;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.solution-body-container {
+  margin-Left: 0px;
+  margin-right: 0px;
+}
+
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 10px 5px;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-sizing: border-box; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #2b9119;
+  margin-bottom: 10px;
+}
+
+.card h3{
+  font-size: 1.5rem;
+}
+.card p{
+  font-size: 1rem;
+}
+
+
+.solution-card-grid{
+   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-items: stretch;
+}
+.solution-card-grid div:nth-child(1){
+  grid-column: span 2;
+}
+
+.solution-card-grid div:nth-child(5){
+  grid-column: span 1;
+}
+
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+}
+
+.industry-card {
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.industry-card h3 {
+  color: #2b9119;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.industry-grid div:nth-child(1) {
+  grid-column: span 2;
+}
+.industry-grid div:nth-child(7) {
+  grid-column: span 1;
+}
+.benefits-img{
+  width: 100vw;
+}
+
+.benefits-container{
+  flex-direction: column;
+}
+
+}

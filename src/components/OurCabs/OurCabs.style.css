@@ -1,0 +1,248 @@
+/* src/styles/CarouselSection.css */
+
+.carousel-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px; /* Adjust padding as needed */
+  background-color: #fff; /* White background */
+  min-height: 550px; /* Ensure enough height for the content */
+  overflow: hidden; /* Hide any overflow */
+  border-bottom: 1px solid #eee; /* Subtle separator at the bottom */
+}
+
+/* "OUR CAB'S" Ribbon */
+.ribbon {
+  position: absolute;
+  top: 40px; /* Adjust distance from top */
+  left: 0;
+  background-color: #ffd700; /* Yellow color */
+  color: #333; /* Dark text */
+  padding: 10px 25px 10px 40px; /* Padding for the text */
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  z-index: 5; /* Ensure it's above other elements */
+
+  /* Creating the pointy shape using clip-path */
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 50%,
+    calc(100% - 20px) 100%,
+    0 100%
+  );
+}
+
+/* Carousel Content Wrapper (now for individual slide content) */
+.carousel-slide-content {
+  /* Renamed from .carousel-content-wrapper */
+  display: flex;
+  align-items: center;
+  gap: 50px; /* Space between car image and text block */
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center; /* Center the content within its max-width */
+  transition: transform 0.5s ease-in-out; /* Smooth transition for slides */
+}
+
+/* Carousel Inner Container for Sliding */
+.carousel-inner {
+  display: flex;
+  width: 100%; /* Take full width of parent */
+  position: relative;
+  overflow: hidden; /* Hide slides that are out of view */
+}
+
+/* Individual Slide Container */
+.carousel-slide {
+  flex-shrink: 0; /* Prevent slides from shrinking */
+  width: 100%; /* Each slide takes 100% of the carousel-inner width */
+  display: flex; /* Apply flex to align items within each slide */
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Same gap as carousel-slide-content */
+}
+
+/* Car Image */
+.car-image-container {
+  flex-shrink: 0; /* Prevent shrinking */
+  width: 55%; /* Adjust width to make the car prominent */
+  max-width: 600px; /* Max width for the image */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Text Block */
+.text-block {
+  background-color: #222; /* Black background */
+  color: #fff;
+  padding: 40px;
+  width: 45%; /* Adjust width for the text block */
+  max-width: 450px;
+  min-height: 250px; /* Ensure sufficient height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px; /* Space between lines of text */
+  text-align: left;
+}
+
+.text-block .label-text {
+  /* Renamed from luxury-text */
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4caf50; /* Green color for initial label */
+  margin-bottom: -10px; /* Reduce space after this line */
+}
+
+.text-block .car-type-text {
+  /* Renamed from suv-text */
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #4caf50; /* Green color for car type */
+  text-transform: uppercase;
+}
+/* Specific colors for car types in text block */
+.text-block.traffic-car .label-text,
+.text-block.traffic-car .car-type-text {
+  color: #4caf50; /* Green for Traffic/WagonR */
+}
+.text-block.office-car .label-text,
+.text-block.office-car .car-type-text {
+  color: #4caf50; /* Green for Office/Sedan */
+}
+.text-block.style-car .label-text,
+.text-block.style-car .car-type-text {
+  color: #4caf50; /* Green for Style/MUV */
+}
+.text-block.luxury-car .label-text,
+.text-block.luxury-car .car-type-text {
+  color: #4caf50; /* Green for Luxury/SUV */
+}
+.text-block.premium-ev .label-text,
+.text-block.premium-ev .car-type-text {
+  color: #00bfff; /* Blue for Premium/EV's */
+}
+
+.text-block .description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ccc; /* Lighter white for body text */
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em; /* Large arrows */
+  color: #999; /* Grey color for arrows */
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+  user-select: none; /* Prevent text selection on click */
+  transition: color 0.3s ease;
+}
+
+.nav-arrow:hover {
+  color: #4caf50; /* Green on hover */
+}
+
+.nav-arrow.left {
+  left: 20px;
+}
+
+.nav-arrow.right {
+  right: 20px;
+}
+
+/* Pagination Dots */
+.pagination-dots {
+  position: absolute;
+  bottom: 30px; /* Distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc; /* Inactive dot color */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #4caf50; /* Active dot color (green) */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .carousel-slide {
+    /* Apply to individual slides now */
+    flex-direction: column; /* Stack image and text block vertically */
+    gap: 30px;
+  }
+
+  .car-image-container,
+  .text-block {
+    width: 90%; /* Take more width on smaller screens */
+    max-width: none; /* Remove max-width constraint */
+  }
+
+  .text-block {
+    text-align: center; /* Center text when stacked */
+  }
+
+  .nav-arrow {
+    font-size: 2.5em; /* Smaller arrows */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-section {
+    padding: 60px 20px;
+    min-height: 500px;
+  }
+
+  .ribbon {
+    top: 20px;
+    padding: 8px 20px 8px 30px;
+    font-size: 1em;
+  }
+
+  .text-block {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  .text-block .label-text {
+    font-size: 1.5em;
+  }
+
+  .text-block .car-type-text {
+    font-size: 1.8em;
+  }
+
+  .text-block .description {
+    font-size: 1em;
+  }
+
+  .nav-arrow {
+    font-size: 2em;
+  }
+}
