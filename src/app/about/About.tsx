@@ -1,4 +1,5 @@
 
+/* eslint-disable react/no-unescaped-entities */
 
 
 export default function About() {
@@ -11,7 +12,7 @@ export default function About() {
           About Daftar
         </h1>
         <p className="mb-4 text-lg leading-relaxed">
-          <strong>Daftar</strong> isn’t just a product — it's a mission. Born from the desire to simplify and streamline workflows,
+          <strong>Daftar</strong> isn&apos;t just a product — it's a mission. Born from the desire to simplify and streamline workflows,
           Daftar empowers businesses and individuals to stay organized, efficient, and ahead of the game.
         </p>
         <p className="mb-4 text-lg leading-relaxed">
