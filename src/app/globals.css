@@ -1,15 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "../styles/variables.css";
-@import "../styles/utilities.css";
 /* Light theme */
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist Sans", sans-serif;
+  /* --font-sans: "Geist Sans", sans-serif; */
   --font-mono: "Geist Mono", monospace;
 }
 
@@ -22,7 +20,7 @@
 }
 
 body {
-  @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased;
+  /* @apply bg-[var(--background)] text-[var(--foreground)] font-sans antialiased; */
   /* Reset body margin */
 
   margin: 0;

@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
-
 import Image from "next/image";
 import { motion } from "framer-motion";
 import main_3 from "../../../public/assets/about_us/main-5.jpg";
