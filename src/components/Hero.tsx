@@ -1,9 +1,6 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import "./Hero.style.css"; 
-import Image from "next/image";
-import Order_ride_bro from "../../assets/HeroSectionImg/Order_ride_bro.png";
 
 const Hero: React.FC = () => {
   const handleCopy = () => {

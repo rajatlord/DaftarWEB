@@ -162,6 +162,11 @@ const ChatBot: React.FC = () => {
   const [registerStep, setRegisterStep] = useState<number | null>(null);
   const [registerData, setRegisterData] = useState<{ address?: string; office?: string; days?: string; months?: string }>({});
 
+useEffect(() => {
+  if (registerStep === null && Object.keys(registerData).length > 0) {
+    console.log("Registration completed:", registerData);
+  }
+}, [registerStep, registerData]);
 
   const askForConcerns = () => {
   setChatHistory(prev => [

@@ -54,8 +54,6 @@ const cards = [
 
 const OurCabs: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const CARD_WIDTH = 300;
-  const GAP = 20;
 
 
   const scrollLeft = () => {
