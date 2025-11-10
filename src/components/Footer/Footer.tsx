@@ -1,10 +1,10 @@
 import React from "react";
-import AnimatedCar from "../../../assets/Sedan.png";
-import AnimatedBus from "../../../assets/Sedan.png";
+// import AnimatedCar from "../../../assets/Sedan.png";
+// import AnimatedBus from "../../../assets/Sedan.png";
 import phone from "../../../public/assets/footer/phone.png"
 import email from "../../../public/assets/footer/email.png"
 import clock from "../../../public/assets/footer/clock.png"
-import vocal from "../../../public/assets/footer/vocal.png"
+import vocal from "../../../public/assets/footer/Vocal.png"
 
 import playstore from "../../../public/assets/footer/playstore.png"
 import payments from "../../../public/assets/footer/payments.png"
