@@ -2,12 +2,14 @@
   "name": "daftar-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18 <21"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
