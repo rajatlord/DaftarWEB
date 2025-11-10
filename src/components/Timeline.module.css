@@ -1,0 +1,188 @@
+.timelineTitle {
+  margin: 0.3em;
+  font-size: 3em;
+}
+.timelineSubtitle {
+  margin: 0.5em;
+}
+.title {
+  text-align: center;
+}
+.titleDesc {
+  color: rosybrown;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.timeline {
+  margin: 5em auto;
+  max-width: 34.15em;
+}
+.checkpoint {
+  display: flex;
+}
+
+.checkpoint:nth-child(odd) .dot {
+  position: absolute;
+  left: -12px;
+  top: 60px;
+  width: 18px;
+  height: 18px;
+  background: #4a9a38;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(43, 145, 25, 0.12);
+  z-index: 2;
+}
+.checkpoint:nth-child(even) .dot {
+  position: absolute;
+  left: 535px;
+  top: 63px;
+  width: 18px;
+  height: 18px;
+  background: #4a9a38;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(43, 145, 25, 0.12);
+  z-index: 2;
+}
+.checkpoint {
+  max-width: 34em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  position: relative;
+}
+.checkpoint .year2 {
+  font-family: "Montserrat", sans-serif;
+  color: #4a9a38;
+  font-size: 2rem;
+  position: absolute;
+  right: -265px;
+  top: 26%;
+}
+
+.checkpoint .year2::before {
+  content: "";
+  background: #4d9836;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  margin-right: 105px;
+}
+  .checkpoint .year4 {
+  font-family: "Montserrat", sans-serif;
+  color: #4a9a38;
+  font-size: 2rem;
+  position: absolute;
+  right: -265px;
+  top: 30%;
+}
+
+.checkpoint .year4::before {
+  content: "";
+  background: #4d9836;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  margin-right: 105px;
+}
+.checkpoint p {
+  line-height: 27px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.checkpoint h1 {
+  color: #4a9a38;
+  font-family: "Montserrat", sans-serif;
+}
+.checkpoint:nth-child(odd) {
+  border-left: 3px solid #888;
+  padding-left: 3em;
+  transform: translatex(17em);
+  text-align: left;
+}
+
+.checkpoint:nth-child(even) {
+  border-right: 3px solid #888;
+  padding-right: 3em;
+  transform: translate(-17em);
+  text-align: right;
+}
+.checkpoint .year1 {
+  font-family: "Montserrat", sans-serif;
+  color: #4a9a38;
+  font-size: 2rem;
+  position: absolute;
+  left: -270px;
+  top: 25%;
+}
+.checkpoint .year3 {
+  font-family: "Montserrat", sans-serif;
+  color: #4a9a38;
+  font-size: 2rem;
+  position: absolute;
+  left: -270px;
+  top: 24%;
+}
+.checkpoint .year5 {
+  font-family: "Montserrat", sans-serif;
+  color: #4a9a38;
+  font-size: 2rem;
+  position: absolute;
+  left: -270px;
+  top: 25%;
+}
+.checkpoint .year1::before {
+  content: "";
+  background: #4d9836;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  margin-left: 118px;
+}
+.checkpoint .year3::before {
+  content: "";
+  background: #4d9836;
+
+  height: 0.1em;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+
+  width: 130px;
+  margin-left: 118px;
+}
+.checkpoint .year5::before {
+  content: "";
+  background: #4d9836;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  margin-left: 118px;
+}
+
+.checkpoint:nth-child(even) .year::before {
+  content: "";
+  background: #4d9836;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 130px;
+  margin-right: 105px;
+}
+
+.checkpoint:nth-child(odd) div::before {
+  left: -0.5em;
+}
+.checkpoint:nth-child(even) div::before {
+  right: -0.5em;
+}

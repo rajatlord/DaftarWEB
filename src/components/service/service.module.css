@@ -1,0 +1,232 @@
+.servicesSection {
+  padding: 60px 20px;
+  background: #f8fdf7;
+}
+
+.servicesHeading {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.servicesContent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.servicesList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servicesList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicesList li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.servicesList p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #4c9939;
+  min-width: 30px;
+}
+
+.servicesImage img {
+  border-radius: 20px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+
+}
+
+.secondList {
+  display: none;
+}
+
+.thirdList {
+  display: none;
+}
+
+.fourthList {
+  display: none;
+}
+
+@media(max-width:1440px){
+  .servicesHeading{
+    font-size: 3.5rem;
+  }
+  .servicesImage img{
+    width: 30vw;
+    height: 40vh;
+  }
+
+  .servicesList li{
+    width: 30vw;
+  }
+  .firstList {
+    display: none;
+  }
+  .secondList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thirdList{
+    display: block;
+  }
+
+  .thirdList .icon{
+    display: flex;
+    align-self: center;
+  }
+
+  .fourthList{
+    display: block;
+  }
+
+  .fourthList .icon{
+    display: flex;
+    align-self: center;
+  }
+
+  .thirdList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .thirdList li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+  .fourthList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  .fourthList li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+  .fourthList{
+    display: flex;
+    gap: 3rem;
+  }
+}
+
+@media(max-width:1024px){
+  .servicesHeading {
+    font-size: 2.5rem;
+  }
+  .servicesImage img{
+    width: 50vw;
+    height: 25vw;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .servicesHeading {
+    font-size: 2rem;
+  }
+
+  /* .servicesContent{
+    flex-direction: row-reverse;
+  } */
+
+  /* .servicesList ul{
+      width: 40vw;
+    } */
+  .servicesImage img {
+    width: 50vw !important;
+    height: 30vh !important;
+    object-fit: cover;
+  }
+
+  .servicesContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .firstList {
+    display: none;
+  }
+
+  .secondList {
+    display: block;
+  }
+
+  .thirdList {
+    display: block;
+    padding-left: 0px;
+  }
+
+  .thirdList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .fourthList {
+    display: block;
+    display: flex;
+    gap: 2rem;
+    padding-left: 0px;
+  }
+
+  .fourthList li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+}

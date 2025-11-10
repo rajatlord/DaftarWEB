@@ -1,0 +1,380 @@
+@import url("../globals.css");
+
+/* ========== General ========== */
+.careers-page {
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  margin-bottom: 80px;
+}
+
+.careers-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+/* ========== Hero Section ========== */
+.career-hero {
+  background: url("/assets/career-banner.jpg") center/cover no-repeat;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-overlay h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* ========== Join Section ========== */
+.join-section {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.join-header .tag {
+  color: #999;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.join-header h2 {
+  font-size: 2.2rem;
+  margin: 15px 0;
+}
+
+.join-header span {
+  color: #4CAF50;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+/* ========== Grid Layout ========== */
+.join-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ========== Job Cards ========== */
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.job-card {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.job-type {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.job-title {
+  font-size: 1.3rem;
+  color: #2b9119;
+  margin: 8px 0;
+}
+
+.job-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.apply-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #3e8f41;
+}
+
+/* ========== Apply Form ========== */
+.apply-form {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.apply-form h3 {
+  color: #2b9119;
+  margin-bottom: 20px;
+}
+
+.apply-form input,
+.apply-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.apply-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ========== Responsive Design ========== */
+/* @media (max-width: 900px) {
+  .join-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .career-overlay h1 {
+    font-size: 2rem;
+  }
+} */
+@media(max-width: 1440px) {
+  .careers-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+
+  .join-header .tag {
+    font-size: 1.2rem;
+  }
+
+  .join-header h2 {
+    font-size:3.5rem;;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .apply-form h3 {
+    font-size: 1.6rem;;
+  }
+
+  .apply-form input,
+  .apply-form textarea {
+    width: 90%;
+  }
+
+
+  /* ========== Job Cards ========== */
+  .job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .job-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    text-align: left;
+  }
+
+  .job-type {
+    font-size: 1rem;
+    color: #888;
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+    color: #2b9119;
+    margin: 8px 0;
+  }
+
+  .job-desc {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 12px;
+  }
+
+  .apply-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s ease;
+    font-size: 1.2rem;
+  }
+
+  .apply-btn:hover {
+    background: #3e8f41;
+  }
+
+}
+
+@media(max-width: 1024px) {
+
+  .careers-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+
+
+  .join-header .tag {
+    font-size: 0.95rem;
+  }
+
+  .join-header h2 {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .apply-form {
+    height: 40vh;
+
+  }
+
+  .apply-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .apply-form input,
+  .apply-form textarea {
+    width: 90%;
+  }
+
+
+}
+
+@media(max-width: 768px) {
+  .career-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .careers-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .join-grid {
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .join-header .tag {
+    font-size: 0.95rem;
+  }
+
+  .join-header h2 {
+    font-size:2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .apply-form {
+    width: 60vw;
+  }
+
+  .apply-form h3 {
+    font-size:1.5rem;
+  }
+
+  .apply-form input,
+  .apply-form textarea {
+    width: 80%;
+  }
+
+}
+
+@media(max-width: 480px) {
+  .careers-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media(max-width: 360px) {
+  .career-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .careers-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .join-grid {
+    display: flex;
+    gap: 2rem;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .join-header .tag {
+    font-size: 0.8rem;
+  }
+
+  .join-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+
+  .apply-form input,
+  .apply-form textarea {
+    width: 80%;
+  }
+
+}
