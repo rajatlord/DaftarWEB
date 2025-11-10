@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import ChatBot from "@/components/Chatbot/ChatBot";
-import Head from "next/head";
+// import Head from "next/head";
 // import { usePathname } from "next/navigation";
 // import { useEffect, useState } from "react";
 
