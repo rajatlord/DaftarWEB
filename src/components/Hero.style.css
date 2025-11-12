@@ -307,6 +307,58 @@
     width: 88%;
   }
 }
+/* ✅ Fix for MacBook Air M1 and medium laptop screens */
+@media (min-width: 1200px) and (max-width: 1366px) {
+  /* .hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .video-background{
+    width: 111vw;
+    height: 138vh;
+  }
+  .content-wrapper {
+    margin: 0 6vw;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0;
+  }
+
+  .text-content {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    color: white;
+    align-self:flex-start ;
+  }
+
+  .form-wrapper {
+    margin: 0;
+    /* width: 40%; */
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 100%;
+    max-width: 310px;
+    padding: 25px;
+    border-radius: 12px;
+  }
+
+  .headline {
+    font-size: 4rem;
+  }
+}
 
 @media (max-width: 1024px) {
 

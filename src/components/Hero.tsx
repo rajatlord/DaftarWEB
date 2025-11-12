@@ -48,9 +48,7 @@ const Hero: React.FC = () => {
         <button className="outline-button glass-card" onClick={handleCopy}>Contact us  at 7701-900-819</button>
           </p>
         </div>
-        <div>
-         
-        </div>
+        
         {/* Form code */}
         <div className="form-wrapper ">
           <form className="form-container glass-card">

@@ -12,6 +12,7 @@ import Image from "next/image";
 import Service from "../service/service";
 import StatsSection from "../StatsSection";
 import WhyChooseDaftarRoute from "../WhyChooseDaftarRoute/WhyChooseDaftarRoute";
+// import HowItWorksSection from "../HowItWorks/HowItWorks";
 const cards = [
   {
     image: WagonRImage,
