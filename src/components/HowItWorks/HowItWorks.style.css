@@ -410,30 +410,49 @@
     z-index: 0;
     transform: translateY(68%);
     margin-top: 10px;
-}
+  }
 
 }
 
+@media (max-width: 1279px) and (min-width: 768px) {
 
-@media (max-width: 1024px) {  
-      .how-it-works-content-wrapper {
-        padding: 10px;
-        display: flex;
-        gap: 15vw;
-        max-width: none;
-        width: auto;
-        align-items: center;
-        justify-content: space-between;
-    }
+  .how-it-works-content-wrapper {
+    gap: 3rem;
+  }
+
+  .phone-mockup-container {
+    width: 10rem;
+    height: 22rem;
+  }
+
+  .map-button {
+    margin: 20px auto 20px auto;
+  }
+
+  .how-it-works-text-content ol {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .how-it-works-content-wrapper {
+    padding: 10px;
+    display: flex;
+    gap: 15vw;
+    max-width: none;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 }
 
-@media (max-width: 992px) {  
-      .how-it-works-content-wrapper {
-        display: flex;
-        flex-direction: row;
-        gap: 5vw;
-    }
+@media (max-width: 992px) {
+  .how-it-works-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+  }
 
 }
 
@@ -443,17 +462,36 @@
     text-align: left;
   }
 
-  .steps-list {
-    display: flex;
-  }
 
   .phone-mockup-container {
     display: none;
   }
 
+  .how-it-works-text-content ol {
+    width: 90vw !important;
+    height: auto !important;
+    font-size: 0.8rem;
+  }
 
+  .steps-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .step-card {
+    flex: 0 1 calc(45% - 1rem);
+    width: auto;
+    max-width: none;
+  }
+
+  .step-image img {
+    max-width: 90px;
+  }
 
 }
+
 /* ---------- For screens up to 480px ---------- */
 @media (max-width: 480px) {
   .how-it-works-section {
@@ -545,12 +583,14 @@
 /* ---------- For screens up to 390px ---------- */
 @media (max-width: 390px) {
   .how-it-works-section {
-    padding: 36px 14px;
+    padding: 10px 10px;
     flex-direction: column;
     text-align: center;
+
   }
 
   .how-it-works-content-wrapper {
+    padding: 0px;
     flex-direction: column;
     gap: 22px;
     width: 100%;
@@ -560,6 +600,7 @@
   .how-it-works-text-content {
     max-width: 100%;
     text-align: center;
+    padding: 0px;
   }
 
   .second-heading {

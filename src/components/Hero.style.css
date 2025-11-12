@@ -14,7 +14,7 @@
 
 .video-background {
   width: 100vw;
-  height: 120vh;
+  height: 122vh;
   z-index: 1;
   filter: brightness(0.5);
 }
@@ -50,13 +50,15 @@
 .content-wrapper {
   display: flex;
   width: 100%;
+  margin:0 6vw;
 }
 
 
 
 .form-container {
   border-radius: 15px;
-  padding: 40px;
+  /* padding: 40px; */
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -70,18 +72,18 @@
 
 
 .form-container {
-  padding: 3px;
-  width: 70%;
+  padding: 1.5rem;
+  width: 95%;
 }
 
 
 .form-label {
-  width: 70%;
+  width: 100%;
 }
 
 .form-input,
 .form-select {
-  width: 70%;
+  width:85%;
 }
 
 .text-content {
@@ -269,7 +271,16 @@
 
 /* responsive */
 
+@media(max-width:1600px){
+  .form-container{
+    padding: 1.5rem;
+    width: 95%;
+  }
 
+  .form-input, .form-select{
+    width: 85%;
+  }
+}
 
 @media (max-width: 1440px) {
 
@@ -280,7 +291,7 @@
   }
 
   .video-background {
-    width: 100vw;
+    width: 123vw;
     height: 122vh;
   }
 
@@ -296,7 +307,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 65%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     z-index: 3;
     height: auto;
@@ -307,7 +318,7 @@
     width: 88%;
   }
 }
-/* ✅ Fix for MacBook Air M1 and medium laptop screens */
+
 @media (min-width: 1200px) and (max-width: 1366px) {
   /* .hero-container{
     display: flex;
@@ -337,6 +348,12 @@
     width: 50%;
     color: white;
     align-self:flex-start ;
+    
+    padding-bottom: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+     margin-right: 0px;
+
   }
 
   .form-wrapper {
@@ -349,16 +366,62 @@
   }
 
   .form-container {
-    width: 100%;
+    width: 65%;
     max-width: 310px;
     padding: 25px;
     border-radius: 12px;
+  }
+
+  .form-label{
+    text-align: left;
   }
 
   .headline {
     font-size: 4rem;
   }
 }
+/* --- */
+@media (min-width: 1280px) {
+  .video-background{
+    width: 100vw;
+    height: 100vw;
+  }
+  .content-wrapper {
+    flex-direction: row;
+  }
+  .text-content {
+    width: 50%;
+  }
+  .form-wrapper {
+    width: 45%;
+  }
+}
+
+/* ✅ Tablet (768px–1279px) */
+@media (max-width: 1279px) and (min-width: 768px) {
+  .text-content{
+    padding: 0;
+    margin: 0;
+  }
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .text-content, .form-wrapper {
+    width: 90%;
+  }
+  .form-container{
+    width: 35%;
+    align-self:flex-start ;
+    align-items: flex-start;
+  }
+
+  .form-label{
+    text-align: left;
+  }
+}
+/* --- */
 
 @media (max-width: 1024px) {
 
