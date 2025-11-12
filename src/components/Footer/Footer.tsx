@@ -1,5 +1,5 @@
 import React from "react";
-// import AnimatedCar from "../../../assets/Sedan.png";
+// // import AnimatedCar from "../../../assets/Sedan.png";
 // import AnimatedBus from "../../../assets/Sedan.png";
 import phone from "../../../public/assets/footer/phone.png"
 import email from "../../../public/assets/footer/email.png"

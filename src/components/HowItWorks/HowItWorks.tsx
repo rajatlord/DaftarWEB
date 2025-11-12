@@ -1,10 +1,15 @@
+'use client';
+
 import React from "react";
+
 import Image from "next/image";
 import "./HowItWorks.style.css";
 import PhoneScreenImage from "../../../assets/TrackScreenImage.jpg";
 import Step1Image from "../../../assets/steps/1.jpg";
 import Step2Image from "../../../assets/steps/2.jpg";
 import Step3Image from "../../../assets/steps/3.png";
+import { useRouter } from "next/navigation";
+
 const steps = [
   {
     image: Step1Image,
@@ -20,6 +25,8 @@ const steps = [
   },
 ];
 const HowItWorksSection: React.FC = () => {
+   const router = useRouter();
+
   return (
     <section className="how-it-works-section">
       <div className="green-wave-bg"></div>
@@ -40,7 +47,7 @@ const HowItWorksSection: React.FC = () => {
               </li>
             ))}
           </ol>
-          <button className="map-button">
+          <button className="map-button" onClick={() => router.push("/map-your-route")} >
             MAP YOUR DAFTAR ROUTE
           </button>
         </div>

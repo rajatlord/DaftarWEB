@@ -230,3 +230,143 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 }
+
+@media (max-width: 390px) {
+  .servicesSection {
+    padding: 15px;
+    width: 100vw;
+  }
+
+  .servicesHeading {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .servicesContent {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .servicesImage img {
+    width: 92% !important;
+    height: auto !important;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .servicesList {
+    width: 100%;
+  }
+
+  .servicesList ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .servicesList li {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    font-size: 0.95rem;
+  }
+
+  .servicesList li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  }
+
+  .icon {
+    font-size: 1.3rem;
+    min-width: 26px;
+    color: #4c9939;
+  }
+
+  .servicesList p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  /* Show first list only (hide alternate ones) */
+  .firstList {
+    display: block;
+  }
+
+  .secondList,
+  .thirdList,
+  .fourthList {
+    display: none;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .servicesSection {
+    padding: 10px;
+    width: 100vw;
+  }
+
+  .servicesHeading {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .servicesContent {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .servicesImage img {
+    width: 90% !important;
+    height: auto !important;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  .servicesList {
+    width: 100%;
+  }
+
+  .servicesList ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .servicesList li {
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+    min-width: 24px;
+  }
+
+  /* Show only firstList, hide others */
+  .firstList {
+    display: block;
+  }
+
+  .secondList,
+  .thirdList,
+  .fourthList {
+    display: none;
+  }
+}

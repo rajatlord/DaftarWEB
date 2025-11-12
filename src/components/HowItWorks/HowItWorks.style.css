@@ -7,6 +7,7 @@
   position: relative;
   overflow: hidden;
   width: auto;
+  z-index: 1;
 }
 
 .how-it-works-content-wrapper {
@@ -453,23 +454,234 @@
 
 
 }
+/* ---------- For screens up to 480px ---------- */
+@media (max-width: 480px) {
+  .how-it-works-section {
+    flex-direction: column;
+    padding: 40px 16px;
+    text-align: center;
+  }
 
-@media (max-width: 480px) {}
+  .how-it-works-content-wrapper {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .how-it-works-text-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .second-heading {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .how-it-works-text-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  /* Scrollable step cards on mobile */
+  .steps-list {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 10px 6px;
+    margin: 0 auto 20px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .steps-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .step-card {
+    flex: 0 0 75%;
+    scroll-snap-align: center;
+    width: 75%;
+    max-width: 260px;
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .step-image img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .step-text {
+    font-size: 0.9rem;
+  }
+
+  .map-button {
+    width: 220px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .phone-mockup-container {
+    display: none;
+  }
+
+  .green-wave-bg {
+    width: 100%;
+    height: 80px;
+    border-top-right-radius: 80% 50px;
+    transform: translateY(60%);
+  }
+}
+
+/* ---------- For screens up to 390px ---------- */
+@media (max-width: 390px) {
+  .how-it-works-section {
+    padding: 36px 14px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .how-it-works-content-wrapper {
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .how-it-works-text-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .second-heading {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .how-it-works-text-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  /* Scrollable step cards with perfect centering */
+  .steps-list {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 8px 4px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .steps-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .step-card {
+    flex: 0 0 78%;
+    scroll-snap-align: center;
+    width: 78%;
+    max-width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .step-image img {
+    max-width: 95px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .step-text {
+    font-size: 0.88rem;
+    line-height: 1.4;
+  }
+
+  .map-button {
+    width: 210px;
+    padding: 11px 22px;
+    font-size: 0.92rem;
+    border-radius: 18px;
+    margin-top: 18px;
+  }
+
+  .phone-mockup-container {
+    display: none;
+  }
+
+  .green-wave-bg {
+    width: 100%;
+    height: 70px;
+    border-top-right-radius: 80% 50px;
+    transform: translateY(65%);
+  }
+}
 
 @media (max-width: 360px) {
   .how-it-works-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #f8f8f8;
-    position: relative;
-    overflow: hidden;
-    width: auto;
+    padding: 32px 12px;
   }
 
-  .how-it-works-text-content .second-heading {
+  .how-it-works-content-wrapper {
+    gap: 20px;
+  }
+
+  .second-heading {
     font-size: 1.4rem;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .how-it-works-text-content h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .steps-list {
+    gap: 12px;
+    padding: 8px 4px;
+  }
+
+  .step-card {
+    flex: 0 0 80%;
+    max-width: 240px;
+    padding: 14px;
+  }
+
+  .step-image img {
+    max-width: 90px;
+    margin-bottom: 10px;
+  }
+
+  .step-text {
+    font-size: 0.85rem;
+  }
+
+  .map-button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .green-wave-bg {
+    width: 100%;
+    height: 60px;
+    transform: translateY(70%);
+    border-top-right-radius: 80% 50px;
   }
 }

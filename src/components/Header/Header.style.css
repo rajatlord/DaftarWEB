@@ -96,9 +96,18 @@
 ------------------------------ */
 
 /* Tablets and below */
+
+@media (max-width: 1440px) {
+  .header-inner {
+    margin:0 10vw;
+  }
+  .nav-menu ul {
+    gap: 1.2rem;
+  }
+}
 @media (max-width: 1024px) {
   .header-inner {
-    padding: 0.75rem 1rem;
+    margin:0 10vw;
   }
   .nav-menu ul {
     gap: 1.2rem;
